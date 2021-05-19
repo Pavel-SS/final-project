@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Movie App</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="header_block-left">
+            <div class="home">
+                <a href="./index.html" class="home_link">&#9751;</a>
+            </div>
+            <form id="form">
+                <input type="text" placeholder="Поиск" id="search" class="search">
+            </form>
+            <div id='search_block' class="search_block"></div>
+        </div>
+        <div class="header_block-right">
+            <span class="user"></span>
+            <button class="register" onclick="document.location='registr.html'">Sign Ip/Sign Up</button>
+        </div>
+    </header>
+    <div class="section">
+        <a href="#" class="add-movie"> &#10010; Add movie</a>
+    </div>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content" id="overlay-content"></div>
+        <a href="javascript:void(0)" class="arrow arrow_left" id="arrow-left">&#10170;</a>
+        <a href="javascript:void(0)" class="arrow arrow_right" id="arrow-right">&#10170;</a>
+    </div>
+    <main id="main"></main>
+    <div class="pagination">
+        <div class="page" id="prev">Previous page</div>
+        <div class="current" id="current">1</div>
+        <div class="page" id="next">Next page</div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
